@@ -1,5 +1,5 @@
 # Source code of Abs-LR Model for Abstractive Summarization with Guiding Entities
-Implementation of Our Paper "Controllable Abstractive Sentence Summarization with Guiding Entities" in COLING 2020 (To be appear).
+Implementation of Our Paper "Controllable Abstractive Sentence Summarization with Guiding Entities" in COLING 2020.
 
 
 
@@ -28,3 +28,17 @@ Set parameter and path in `config.py`
 Tokenize with `tokenizer.py`
 
 Train the model with `train.py`
+
+
+## Citation
+If you find this repo helpful, please cite the following:
+
+```
+@inproceedings{zheng2020controllable,
+  title={Controllable Abstractive Sentence Summarization with Guiding Entities},
+  author={Zheng, Changmeng and Cai, Yi and Zhang, Guanjie and Li, Qing},
+  booktitle={Proceedings of the 28th International Conference on Computational Linguistics},
+  pages={5668--5678},
+  year={2020}
+}
+```
