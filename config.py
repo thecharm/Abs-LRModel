@@ -2,9 +2,10 @@ start_token = '<start>'
 end_token = '<end>'
 mid_token = '<mid>'
 oov_token = 'UNK'
-articles_path = 'D:/Datasets/DailymailCNN_finished_files/chunked/'
-objects_path = 'D:/Datasets/DailymailCNN_finished_files/entities/'
-checkpoint_dir = 'D:/Project/Text_Summarization/LRModel/CNNDM_training_checkpoints'
+src_path = 'data/Gigaword/org_data/{}.src.txt'
+tgt_path = 'data/Gigaword/org_data/{}.tgt.txt'
+objects_path = 'data/Gigaword/object/{}.src.txt'
+checkpoint_dir = 'Gigaword_training_checkpoints'
 
 epochs = 10000
 
@@ -12,7 +13,7 @@ data_size = 500
 
 # hyperparameters
 vocab_size = 30000
-articles_maxlen = 400
+articles_maxlen = 50
 left_abstracts_maxlen = 25
 right_abstracts_maxlen = 25
 objects_max_num = 3
