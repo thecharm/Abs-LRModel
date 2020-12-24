@@ -19,6 +19,24 @@ Implementation of Our Paper "Controllable Abstractive Sentence Summarization wit
 
 Our controllable neural model with guiding entities. The original article texts are encoded with a BiLSTM layer. We utilize a pretrained BERT named entity recognition tool to extract entities from input texts. The decoder consists of two LSTMs: LSTM-L and LSTM-R. Our model starts generating the left and right part of a summary with selected entities and can guarantee that entities appear in final output summaries.
 
+## Data Format
+
+Check the README.md file for more details about sources and usage in ./data.
+
+The preprocessed data are composed by three parts: 
+
+>Source file, each line contains a sentence
+>```
+>Sonia Sotomayor was sworn in Saturday as the Supreme Court 's first Hispanic justice and only third female member in the top U.S. court 's 220-year history.
+>```
+>Target file, each line contains a reference summary
+>```
+>Sotomayor sworn in to top U.S. court.
+>```
+>Object file, each line contains the extracted entities, separated by a delimiter
+>```
+>Sonia Sotomayor <sep> Supreme court <sep> Hispanic <sep> U.S.
+>```
 
 
 ## Usage
